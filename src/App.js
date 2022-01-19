@@ -1,11 +1,13 @@
-import './App.css';
+import ReplayParser from './containers/ReplayParser';
+import { AppWraper, Container } from './styles/app.styled';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-
-    </div>
-  );
+    <AppWraper>
+      <Container>
+        <ReplayParser />
+      </Container>
+    </AppWraper>
+  )
 }
 
-export default App;
